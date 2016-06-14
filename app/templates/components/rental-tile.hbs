@@ -1,1 +1,9 @@
-<li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}</li>
+<li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}
+    {{#if isImageShowing }}
+       <p><img src={{rental.image}} alt={{rental.type}} ></p>
+     {{else}}
+       <button>Show image</button>
+    {{/if}}
+</li>
+
+<!-- The value of isImageShowing comes from the component's JavaScript file (rental-tile.js). Since the image will be hidden at first, we will set the property to false: -->
