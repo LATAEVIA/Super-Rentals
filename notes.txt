@@ -1,0 +1,24 @@
+
+*app/templates/index.hbs
+<h1> Welcome to Super Rentals </h1>
+
+We hope you find exactly what you're looking for in a place to stay.
+
+<!--//Anything a component needs from its surroundings must be passed in manually. In this instance, we are passing the variable rental to the component and assigning it the value of rental representing the individual rental object in the current iteration of the loop. That is, we're defining the variable rental used in the component's file as the model object we're also referring to as rental during each iteration of the loop, as defined when we state {}#each model as |rental|}}.
+//To put it briefly, the rental on the left of the = refers to the variable name used within the component and the rental on the right refers to the model object we're assigning this variable to.-->
+<ul>
+  {{#each model as |rental|}}
+     {{rental-tile rental=rental}}
+  {{/each}}
+</ul>
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+
+<!-- //Since the rental-tile component will manage how a user sees and interacts with a rental, we will move the contents of the {{#each}} loop on the index into the rental-tile template (app/templates/components/rental-tile.hbs). Then, we can render the rental-tile component inside the loop instead:
+//Here, we're still looping through each rental in the model. But instead of displaying the rental details directly on the index template, we're rendering our new component by calling {{rental-tile rental=rental}}.
+<ul>
+  {{#each model as |rental|}}
+     <li>{{rental.owner}}'s {{rental.type}} in {{rental.city}}</li>
+  {{/each}}
+</ul> -->
