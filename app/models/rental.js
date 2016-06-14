@@ -10,7 +10,3 @@ export default DS.Model.extend({
     image: DS.attr(),
     bedrooms: DS.attr()
 });
-
-export default DS.Model.extend({
-
-});
