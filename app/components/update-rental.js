@@ -16,6 +16,7 @@ export default Ember.Component.extend({
         bedrooms: this.get('bedrooms'),
       };
       //Once the params are gathered, we hide the form by setting updateRentalForm back to false, and call this.sendAction('update', rental, params); to send the update() action up one level, along with the rental object we will alter, and the params we've just gathered.
+      //this.sendAction(‘update, rental, params); only sends the update() action up one level. It is sent from the update-rental component to its parent component, rental-tile. As such, the rental-tile component will also have to pass the action upward in order for this action to eventually reach the appropriate route. rental-tile will need its own update action to do this:
       this.set('updateRentalForm', false);
       this.sendAction('update', rental, params);
     }
