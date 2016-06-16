@@ -7,6 +7,7 @@ export default Ember.Component.extend({
       this.set('updateRentalForm', true);
     },
     ////t's important that the variable names we assign these values match the rental model’s attribute names (ie: owner, city, type, image, and bedrooms; the same attributes we defined on our model in models/rental.js). If they do not, we will receive errors when assigning these new values to our rental object.
+    //Again, the keys inparams should match the names of the attributes onrental model. 
     update(rental) {
       var params = {
         owner: this.get('owner'),
