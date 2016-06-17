@@ -7,10 +7,24 @@ export default Ember.Component.extend({
       this.set('isImageShowing', true);
     },
     imageHide: function() {
-      this.set('isImageShowing', false);
-    },
-    update(rental, params) {
-      this.sendAction('update', rental, params);
-    },
+     this.set('isImageShowing', false);
+   }
   }
 });
+
+// import Ember from 'ember';
+//
+// export default Ember.Component.extend({
+//   isImageShowing: false,
+//   actions: {
+//     imageShow: function() {
+//       this.set('isImageShowing', true);
+//     },
+//     imageHide: function() {
+//       this.set('isImageShowing', false);
+//     },
+//     update(rental, params) {
+//       this.sendAction('update', rental, params);
+//     },
+//   }
+// });
