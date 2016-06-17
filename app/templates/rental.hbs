@@ -1,3 +1,6 @@
 <!-- When we had multiple records in the model (such as on the index route), calling model returned an array of rental objects. We then looped through this array to display details about each rental. However, since the model in our rental route represents a single record, we can access all of its by calling model directly (ie: model.owner, model.type, etc). -->
-<h2>More information about {{model.owner}}'s {{model.type}}</h2>
-{{rental-detail rental=model}}
+<h2>More information about {{model.owner}}'s {{model.type}}:</h2>
+
+{{update-rental rental=model update="update"}}
+
+{{rental-detail rental=model destroyRental="destroyRental"}}
