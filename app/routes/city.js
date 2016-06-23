@@ -4,6 +4,12 @@ export default Ember.Route.extend({
   model(params) {
     return this.store.findRecord('city', params.city_id);
   },
+  // Create a new rental with the information from our parameters, save it to the database, and call it "newRental".
+  // Refer to the city in those parameters as "city".
+  // Retrieve the list of rentals located in "city", and add "newRental" to that list.
+  // Save "newRental", so it remembers what city it belongs in.
+  // Wait until "newRental" has finished saving, then save "city'" too, so it remembers it contains "newRental".
+  // Afterwards, take us to the page displaying details for "city".
   actions: {
     save3(params) {
       var newRental = this.store.createRecord('rental', params);
