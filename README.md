@@ -1,7 +1,12 @@
-# Super-rentals
+# _Super Rentals_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _A web application build as a review of competencies in the following: using routes to control navigation through an Ember.js application, using Handlebars to create dynamic elements in templates, persisting data with models, Ember Data and Firebase, manipulating data between models and templates using components, using computed properties, helpers, and integrated services, and creating a working application using Ember., 06/23/2016_
+
+#### By _**LaTaevia**_
+
+## Description
+
+_A web application functioning as a website where property owners may list places for rent, and renters will be able to find places to stay._
 
 ## Prerequisites
 
@@ -10,44 +15,38 @@ You will need the following things properly installed on your computer.
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
 * [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
+* [Ember CLI](http://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/LATAEVIA/Super-Rentals.git`
 * change into the new directory
 * `npm install`
 * `bower install`
+* `ember install emberfire`
 
-## Running / Development
+# Running / Development
 
+_Implement development server with live reloading:_
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+## Technologies Used
 
-Make use of the many generators for code, try `ember help generate` for more details
+* _HTML_
+* _CSS_
+* _Bootstrap_
+* _JavaScript_
+* _Node.js_
+* _Node Package Manager_
+* _Bower_
+* _Ember.js_
+* _TypeScript_
+* _Firebase_
 
-### Running Tests
+### License
 
-* `ember test`
-* `ember test --server`
+*This software is licensed under the MIT license*
 
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Copyright (c) 2016 **_LaTaevia_**
